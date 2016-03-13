@@ -18,7 +18,7 @@
            remote="aosp"
            sync-j="4" />
   <remote name="mups" fetch="https://www.github.com/themuppets" revision="cm-13.0" />
-  <remote name="coach" fetch="https://www.github.com/coach0512" revision="cm-13.0" />
+  <remote name="coach" fetch="https://www.github.com/coach0512" revision="mm6.0-aospb" />
 
   <project path="build" name="build" remote="aospb" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -26,8 +26,8 @@
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="art" remote="aospb"  />
 #
-  <project path="device/lge/h811" name="android_device_lge_h811-aospb" remote="coach" />
-  <project path="device/lge/g4-common" name="android_device_lge_g4-common-aospb" remote="coach" />
+  <project path="device/lge/h811" name="android_device_lge_h811" remote="coach" />
+  <project path="device/lge/g4-common" name="android_device_lge_g4-common" remote="coach" />
   <project path="kernel/lge/msm8992" name="android_kernel_lge_msm8992" remote="cm" />
   <project path="vendor/lge" name="proprietary_vendor_lge" remote="mups" />
 #
